@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Forward } from "lucide-react";
 import ChatWindow from "./chat-window";
 import { ThemeToggle } from "./theme-toggle";
+import Link from "next/link";
 
 export default function Chat() {
   const {
@@ -49,7 +50,9 @@ export default function Chat() {
           Satvik GPT
         </CardTitle>
         <div className="flex items-center gap-4">
-          <IconGithub className="h-5 w-5" />
+          <Link href="https://github.com/Aaryan6/satvik-gpt" target="_blank">
+            <IconGithub className="h-5 w-5" />
+          </Link>
           <ThemeToggle />
         </div>
       </CardHeader>
